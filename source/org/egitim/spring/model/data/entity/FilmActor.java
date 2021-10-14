@@ -41,10 +41,7 @@ public class FilmActor  {
 		this.film = film;
 	}
 
-	/*
-	 *  @JoinTable(name = "cart_items",
-            joinColumns = { @JoinColumn(name = "cart_id") },
-            inverseJoinColumns = { @JoinColumn(name = "item_id") })*/
+
 	
 	@ManyToOne(fetch = FetchType.EAGER)
 	@MapsId("actorId")
